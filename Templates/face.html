@@ -6,7 +6,24 @@
   <title>Mermaid Events — Gallery</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    
+.img1 {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+  border-radius: 8%;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.img1.expanded {
+  width: 90vw;
+  max-width: 600px;
+  border-radius: 0%;
+  transform: scale(1.1) rotate(1deg);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
     :root{
       --purple-800:#5b21b6;
       --purple-900:#4c1d95;
@@ -91,6 +108,12 @@
     footer{margin-top:24px;text-align:center;color:#fff;background:#4c1d95;border-radius:14px;padding:16px}
   </style>
 </head>
+<script>
+  document.querySelector('.img1').addEventListener('click', function() {
+    this.classList.toggle('expanded');
+  });
+</script>
+
 <body>
   <div class="wrap">
   <figcaption>
