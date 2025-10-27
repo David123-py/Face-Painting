@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mermaid Events — Gallery</title>
   <style>
+    
     :root{
       --purple-800:#5b21b6;
       --purple-900:#4c1d95;
@@ -18,6 +19,56 @@
       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><g fill='none' stroke='white' stroke-width='2' opacity='0.35'><path d='M0 30a30 30 0 0 0 60 0'/><path d='M-30 30a30 30 0 0 0 60 0'/><path d='M30 30a30 30 0 0 0 60 0'/></g></svg>");
       background-size:60px 60px;background-repeat:repeat;
     }
+.img1 {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+  border-radius: 8%;
+  transition: transform 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+}
+
+.img1:hover {
+  transition: 0.4s ease-in-out;
+  transform: rotate(-2deg) scale(1.05);
+  border-radius: 0%;
+  
+}
+
+.img2 {
+  display: block;
+  margin: 0 auto;
+  width: 450;
+  height: auto;
+  border-radius: 2%;
+  transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+.img2 {
+  display: block;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 2%;
+  transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+.img2:hover {
+  border-radius: 0%;
+  transform: scale(1.08);
+  border: 2px solid #1f2937; 
+  transition: 0.2 ease-in-out;
+}
+
+.item:hover {
+  transform: rotate(-2deg) scale(1.05);
+  transition: transform 0.4s ease-in-out;
+  background-color: #1a51eb;
+}
+.social:hover{
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateY(-4px)
+  
+}
+
     .wrap{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:24px}
     header{text-align:center;background:rgba(103,232,249,.8);backdrop-filter:saturate(1.2) blur(2px);padding:22px;border-radius:16px;box-shadow:0 8px 24px rgba(76,29,149,.15)}
     header h1{margin:0;color:var(--purple-800);font-size:32px;font-weight:900}
@@ -28,13 +79,14 @@
     .item{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 12px 24px rgba(0,0,0,.12);background:#fff}
     .item img{display:block;width:100%;height:260px;object-fit:cover}
     .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(to top,rgba(76,29,149,.8),transparent);color:#fff;font-weight:700}
-    .note{margin-top:16px;color:#5b21b6;text-align:center}
+    .note{margin-top:20px;color:#5b21b6;text-align:center;size: adjust 20px;}
     .social{display:flex;justify-content:center;gap:12px;margin-top:18px;flex-wrap:wrap}
     .pill{border-radius:18px;padding:12px 18px;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 8px 20px rgba(0,0,0,.15);transition:.15s}
     .pill:hover{transform:translateY(-1px)}
-    .ig{background:#d946ef}.ig:hover{background:#c026d3}
-    .fb{background:#2563eb}.fb:hover{background:#1d4ed8}
-    .wa{background:#22c55e}.wa:hover{background:#16a34a}
+    .bk{color: #ffffff; background: #4cf9ff;}.bk:hover{background: #1aa5aa}
+    .ig{background:#d946ef}.ig:hover{background:#ba21ce}
+    .fb{background:#2563eb}.fb:hover{background:#1a51eb}
+    .wa{background:#22c55e}.wa:hover{background:#0f863a}
     footer{margin-top:24px;text-align:center;color:#fff;background:#4c1d95;border-radius:14px;padding:16px}
   </style>
 </head>
@@ -68,7 +120,7 @@
 ">← Back</a>
     </section>
     <h2>Mermaid for Events</h2>
-    <a href="/booking" class="">Book your magical moment today!</a>
+    <a href="/booking" class="pill bk">Book your magical moment today!</a>
     <footer>© 2025 Mermaid Events. All rights reserved.</footer>
   </div>
 </body>
